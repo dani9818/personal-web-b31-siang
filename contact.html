@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Creating Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="left-side">
+            <a href="index.html">
+                <img src="assets/logo.png" />
+            </a>
+
+            <ul>
+                <li>
+                    <a href="index.html" target="blank">Home</a>
+                </li>
+                <li>
+                    <a href="https://github.com/">Blog</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <center>
+        <div class="box-form">
+            <h1>Contact Form</h1>
+            <form action="">
+                <div class="input-group">
+                    <label for="name_text">Name</label>
+                    <input type="text" id="name_text" placeholder="Your Name"/>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email Addres"/>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="text" placeholder="input your phone number" id="phone"/>
+                </div>
+
+                <div>
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                        <option value="lets talk" disabled selected>Let Talk</option>
+                        <option value="lets Collaboration">Lets Collaboration</option>
+                        <option value="I Am Hiring">I Am Hiring</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" placeholder="Type Your Message Here"></textarea>
+                </div>
+                
+                <button type="button" onclick="showData()">Submit</button>
+            </form>
+        </div>
+    </center>
+
+    <script src="form.js"></script>
+
+</body>
+</html>
